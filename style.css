@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.cardMain {
+    margin-top: 100px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.cardInside {
+    width: 150px;
+    height: 242px;
+    background-color: #b26b30;
+    position: relative;
+    left: 30px;
+    top: -43px;
+}
+
+.images {
+    position: absolute;
+    z-index: 1;
+}
+
+.content1 {
+    position: relative;
+    top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.content2 {
+    transform: rotate(89deg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 61px;
+    top: 30%;
+    color: white;
+    font-weight: bold;
+
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.exlink {
+    padding: 10px;
+    background: white;
+    border: 3px solid #b26b30;
+    text-decoration: none;
+    color: #b26b30;
+}
+
+body {
+    background-color: #f5f5ff;
+}
+body > div.wrapper > div{
+    width: 914px;
+}
+.wrapper {
+    padding: 70px 0;
+    background:url("https://media.designcafe.com/wp-content/uploads/2022/09/10114739/minimalist-dining-room-design.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Default slide */
+.center-slider .slick-slide {
+    background-color: #b32532;
+    color: #fff;
+    height: 200px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+   
+}
+
+.center-slider .slick-slide,
+.center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+    transform: scale(0.8, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Active center slide (You can change anything here for center slide)*/
+.center-slider .slick-center,
+.center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
+    transform: scale(1.1);
+    background-color: #000000;
+    z-index: 1;
+}
+
+.center-slider .slick-current.slick-active {
+    transform: scale(1.1);
+    background-color: #000000;
+}
+
+.slick-next,
+.slick-prev {
+    z-index: 5;
+}
+
+.slick-next {
+    right: 15px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev {
+    left: 15px;
+
+}
+
+.slick-next:before {
+    color: #000;
+    font-size: 26px;
+
+}
+
+.slick-prev:before {
+    color: #000;
+    font-size: 26px;
+
+}
+
+/* Add additional CSS for mobile view */
+@media (max-width: 768px) {
+    .slick-prev {
+        left: auto;
+        /* right: 15px; */
+    }
+
+    .slick-next:before {
+        color: #000;
+        font-size: 26px;
+        filter: invert(1);
+    }
+
+    .slick-prev:before {
+        color: #000;
+        font-size: 26px;
+        filter: invert(1);
+    }
+}
+
+@media (min-width: 769px) {
+    .center-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-slider .slick-center {
+        transform: scale(1.1);
+    }
+
+    
+}
